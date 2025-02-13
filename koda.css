@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+
+body {
+    background-color: #000000; /* Nastavi ozadje na rdečo barvo */
+    margin: 0;
+    padding: 0;
+}
+
+/* Nastavitve za header */
+header {
+    background-color: #000000; /* Nastavi ozadje za header */
+    padding-top: 5px;
+    text-align: left;
+    margin: 0;
+    width: 100%; /* Zagotovi, da se header širi čez celoten zaslon */
+    box-sizing: border-box; /* Da vključimo padding v širino */
+    display: flex;
+    justify-content: space-between; /* Poravnava elementov v headerju */
+    align-items: center;
+    padding-left: 5%; /* Dodamo nekaj prostora na levi strani */
+    padding-right: 5%; /* Dodamo nekaj prostora na desni strani */
+}
+
+/* Nastavitve za linke v headerju */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 5vw; /* Razdalja med linki */
+}
+
+nav li {
+    margin-top: 0.8vw;
+    font-family: 'Gabarito', sans-serif;
+    font-size: 25px;  /* Nastavi velikost pisave glede na širino zaslona */
+    font-weight: regular;
+    
+}
+
+nav a {
+ 
+    text-decoration: none;
+    color: #ffffff;
+}
+
+p {
+        width: 60%;
+        margin-left: 5vw; /* Dodan margin-left za 1.5vw */
+        margin-right: auto; /* Nastavite desni rob na auto, da ohranite sredinsko poravnavo */
+        font-family: 'Gabarito', sans-serif;
+        font-size: 20px;
+        font-weight: normal; /* 'regular' ni veljavna vrednost, uporabite 'normal' */
+        color: #ffffff;
+    }
+
+.contact
+{
+margin-top: 4vw;
+line-height: 6pt;
+font-size: 10px;
+}
+
+.besedilo {
+    margin-bottom: 4vw; /* Zadnji sliki odstranite rob desno */
+}
+
+.naslov {
+    margin-left: 5vw; /* Odstrani vse privzete robove */
+    margin-bottom: -1vw;
+    padding: 0; /* Odstrani vso notranjo obrobo */
+    font-family: 'Gabarito', sans-serif;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+/* Nastavitve za main-content */
+.main-content {
+    width: 90%; /* Nastavi širino main-contenta, da je manjša od 100% */
+    margin: 1.5vw auto; /* Nastavi robove na avto, da bo poravnavanje delovalo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#000000; /* Nastavi ozadje za main-content */
+    padding: 0;
+    box-sizing: border-box; /* Da vključimo padding v širino */
+}
+
+/* Slog za slike v vrstici */
+.images {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Poravnaj slike ob robovih */
+    align-items: center;
+}
+.images2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Poravnaj slike ob robovih */
+    align-items: center;
+    margin-top: 1.5vw;
+    margin-left: 0;
+}
+.images3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Poravnaj slike ob robovih */
+    align-items: center;
+    margin-top: 1.5vw;
+    
+}
+
+/* Nastavitve za slike */
+.images img {
+    height: 20.8vw; /* Nastavi želeno višino */
+    object-fit: cover; /* Ohranimo razmerje slike brez deformacije */
+    width: auto; /* Širina slik se bo prilagodila glede na višino */
+}
+/* Nastavitve za slike */
+.images2 img {
+    height: 21.8vw; /* Nastavi želeno višino */
+    object-fit: cover; /* Ohranimo razmerje slike brez deformacije */
+    width: auto; /* Širina slik se bo prilagodila glede na višino */
+}
+/* Nastavitve za slike */
+.images3 img {
+    height: 22vw; /* Nastavi želeno višino */
+    object-fit: cover; /* Ohranimo razmerje slike brez deformacije */
+    width: auto; /* Širina slik se bo prilagodila glede na višino */
+}
+
+/* Slog za .izven_okvirja_slike - container za slike */
+.izven_okvirja_slike {
+    display: flex; /* Postavi slike v vrsto */
+    justify-content: space-between; /* Razdalja med slikama */
+    align-items: center; /* Poravnaj slike po sredini */
+    margin-left: 5vw; /* Levo rob */
+    margin-right: 5vw; /* Desno rob */
+}
+
+/* Slog za slike znotraj .izven_okvirja_slike */
+.izven_okvirja_slike > a > img {
+    height: 33vw; /* Enaka višina za obe sliki */
+    width: auto; /* Širina bo prilagojena glede na višino */
+    object-fit: cover; /* Ohrani razmerje slike brez deformacije */
+    box-sizing: border-box; /* Vključi robove v velikost slike */
+    margin-right: 1.5vw; /* Dodaj razdaljo med slikama */
+    margin-bottom: 8vw;
+}
+
+/* Preverite, da ne vpliva tudi margin za zadnjo sliko */
+.izven_okvirja_slike > a:last-child > img {
+    margin-right: 0; /* Zadnji sliki odstranite rob desno */
+}
+.Origin_slike > a > img {
+    margin: 5vw;
+    margin-right: 1.5vw; /* Dodaj razdaljo med slikama */
+    margin-top: 0;
+    margin-bottom: 8vw;
+    height: 40vw; /* Enaka višina za obe sliki */
+    width: auto; /* Širina bo prilagojena glede na višino */
+    object-fit: cover; /* Ohrani razmerje slike brez deformacije */
+    box-sizing: border-box; /* Vključi robove v velikost slike */
+    margin-right: 1.5vw; /* Dodaj razdaljo med slikama */
+    margin-bottom: 8vw;
+}
+.images video {
+    height: 20.8vw; /* Enaka višina kot slike */
+    width: auto; /* Prilagodi širino glede na višino */
+    object-fit: cover; /* Video naj se obnaša kot slika */
+    display: block; /* Prepreči morebitne neželene razmake */
+}
+.images3 video {
+    height: 20.8vw; /* Enaka višina kot slike */
+    width: auto; /* Prilagodi širino glede na višino */
+    object-fit: cover; /* Video naj se obnaša kot slika */
+    display: block; /* Prepreči morebitne neželene razmake */
+}
+.Misel_slike a video {
+    margin: 0vw 1.5vw 8vw 5vw; /* (top, right, bottom, left) */
+    height: 40vw; /* Enaka višina za obe sliki */
+    width: auto; /* Širina bo prilagojena glede na višino */
+    object-fit: cover; /* Ohrani razmerje slike brez deformacije */
+    box-sizing: border-box; /* Vključi robove v velikost slike */
+}
+.Zine_slike1 {
+    display: flex; /* Postavi slike v vrsto */
+    justify-content: space-between; /* Razdalja med slikama */
+    align-items: center; /* Poravnaj slike po sredini */
+    margin-left: 5vw; /* Levo rob */
+    margin-right: 5vw; /* Desno rob */
+}
+.Zine_slike1 > a > img
+{
+    height: 30vw; /* Enaka višina za obe sliki */
+    width: auto; /* Širina bo prilagojena glede na višino */
+    object-fit: cover; /* Ohrani razmerje slike brez deformacije */
+    box-sizing: border-box; /* Vključi robove v velikost slike */
+    margin-right: 1.5vw; /* Dodaj razdaljo med slikama */
+    margin-bottom: 3vw;
+}
+.Zine_slike2 {
+    display: flex; /* Postavi slike v vrsto */
+    justify-content: space-between; /* Razdalja med slikama */
+    align-items: center; /* Poravnaj slike po sredini */
+    margin-left: 5vw; /* Levo rob */
+    margin-right: 5vw; /* Desno rob */
+}
+.Zine_slike2 > a > img
+{
+    height: 30vw; /* Enaka višina za obe sliki */
+    width: auto; /* Širina bo prilagojena glede na višino */
+    object-fit: cover; /* Ohrani razmerje slike brez deformacije */
+    box-sizing: border-box; /* Vključi robove v velikost slike */
+    margin-right: 1.5vw; /* Dodaj razdaljo med slikama */
+    margin-bottom: 8vw;
+}
+.Branje_slike > a > img {
+    margin: 5vw;
+    margin-right: 1.5vw; /* Dodaj razdaljo med slikama */
+    margin-top: 0;
+    margin-bottom: 8vw;
+    height: 80vw; /* Enaka višina za obe sliki */
+    width: auto; /* Širina bo prilagojena glede na višino */
+    object-fit: cover; /* Ohrani razmerje slike brez deformacije */
+    box-sizing: border-box; /* Vključi robove v velikost slike */
+    margin-right: 1.5vw; /* Dodaj razdaljo med slikama */
+    margin-bottom: 8vw;
+}
+
+
+.Control_slike {
+    display: flex; /* Postavi slike v vrsto */
+    justify-content: space-between; /* Razdalja med slikama */
+    align-items: center; /* Poravnaj slike po sredini */
+    margin-left: 5vw; /* Levo rob */
+    margin-right: 5vw; /* Desno rob */
+}
+
+/* Slog za slike znotraj .izven_okvirja_slike */
+.Control_slike > a > img {
+    height: 31vw; /* Enaka višina za obe sliki */
+    width: auto; /* Širina bo prilagojena glede na višino */
+    object-fit: cover; /* Ohrani razmerje slike brez deformacije */
+    box-sizing: border-box; /* Vključi robove v velikost slike */
+    margin-right: 1.5vw; /* Dodaj razdaljo med slikama */
+    margin-bottom: 8vw;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    p {
+        width: calc(100% - 10vw);
+    margin-left: 5vw;
+    margin-right: 5vw;
+    }
+    .contact
+    {
+    margin-bottom: 17vw;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        gap: 12vw; /* Razdalja med linki */
+    }
+    nav li {
+        margin-top: 0.8vw;
+        font-family: 'Gabarito', sans-serif;
+        font-size: 25px;  /* Nastavi velikost pisave glede na širino zaslona */
+        font-weight: regular;
+        
+    }
+    
+    .images, .images2, .images3 {
+        flex-direction: column;
+        align-items: center;
+        gap: 5vw; /* Razmik znotraj posamezne skupine */
+        margin-bottom: 5vw; /* Razmik med posameznimi skupinami */
+    }
+
+    
+
+    .images img, .images2 img, .images3 img,
+    .images video, .images3 video {
+        width: 100%; /* Vsaka slika bo 100% širine zaslona */
+        height: auto; /* Ohranijo razmerje stranic */
+    }
+    
+
+    
+     /* OBSTOJEČE PRILAGODITVE ZA images, images2, images3 */
+     .izven_okvirja_slike, .Origin_slike, .Misel_slike, 
+     .Zine_slike1, .Zine_slike2, .Branje_slike, .Control_slike {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 5vw;
+         margin-bottom: 17vw;
+         margin-top: 17vw;
+         width: 90vw; /* Raztegne na celotno širino */
+     }
+
+    .izven_okvirja_slike > a > img, .Origin_slike  > a > img, .Misel_slike  > a > img,
+    .Zine_slike1  > a > img, .Zine_slike2  > a > img, .Branje_slike  > a > img, .Control_slike  > a > img,
+    .Misel_slike video {
+     width: 100vw !important; 
+     height: auto !important; /* Ohrani razmerje stranic */
+     max-width: 100%; /* Prepreči preveliko raztezanje */
+     object-fit: scale-down; /* Prepreči obrezovanje in razteg */
+     margin-bottom: 0;
+    }
+
+    .Zine_slike1 {
+        margin-bottom: 5vw;
+    }
+    
+    .Zine_slike2 {
+        margin-top: 0;
+    }
+    
+
+    }
+    @media (max-width: 400px) {
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 17vw; /* Razdalja med linki */
+        }
+        nav li {
+            margin-top: 0.8vw;
+            font-family: 'Gabarito', sans-serif;
+            font-size: 7vw;  /* Nastavi velikost pisave glede na širino zaslona */
+            font-weight: regular;
+            
+        }
+      }
+   
+
+
+
+
+
+
+
+
+
+
